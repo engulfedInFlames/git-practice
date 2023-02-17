@@ -1,0 +1,70 @@
+* Personal access tokens (classic) from github:
+  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
+
+* Text Editor:VScode
+
+* Github Desktop: 편리하게 Git과 연동 가능
+
+0. Github vs Git
+	.1 Git
+	: (Distributed) VSC(Version Control System)
+	: Git은 Repo로 지정된 dir의 파일들을 Binary로 읽어들여(Watch) Tracking한다.
+	: Repo로 사용된 dir을 지정하고 나면, Git은 해당 dir에 .git과 .gitattributes, 두 파일을
+	을 Hidden으로 생성한다. 이 파일들을 통해 Git은 dir 내부의 변경사항을 Tracking한다. 	
+
+	.2 Github
+	: Cloud Git Provider
+	: Git에 커밋된 파일들, 혹은 파일들의 변경사항을 Check, Share, Upload, Download할 수 있는 공간
+	
+	.3 Repo
+	: 실상 Repo는 Git이 감시하는 Local Repo, Github의 Cloud Repo 두 군데로 나뉜다고 할 수 있다.
+
+1. Git
+	.1 Area
+		.1 Working Area
+
+		.2 Staging Area
+		: Commit될 파일들을 관리할 수 있는 Area
+
+		.3 Repoistory Area
+
+	.2 Branch
+	: Create another time line!!!
+
+	.3 CLI
+		.1 Source Control
+		: Changes는 단순히 변경 사항을 알리고, Staged Changes는 변경 사항이 Staged Area에 올랐음을 알린다.
+
+2. Github
+	.1 Fork
+	: 기본적으로 자신의 Github 계정에 Repository를 복사해오는 것이다.
+	: $ git clone 명령어로 fork한 repo를 local repo에서 clone할  수있다.
+
+	.2 New Pull Request
+	: Fork한 자신의 Repo에서 Pull Request 기능을 통해 작업물을 Master Branch에 대해
+	Merge할 것을 요청할 수 있다.
+
+	.3 Upstream branch
+	: Fork하면 upstream branch가 생성된다. upstream을 통해 원 Repo의 변경사항을 확인하고, 
+	Commit하여 자신의 Master branch에 최신 변경사항을 반영할 수 있다. 
+
+
+	.4 Issues
+	: 잘 생성된 Issues는 발생한 문제를 해결하는 데 큰 도움이 된다.
+	
+
+3. Create Git Repo
+	.1 $ git init
+
+1. Reinstall Git
+	.1 $ rm -rf .git
+	: .git이 위치한 dir에서 실행(현재 personal)
+
+	.2 $ git init
+	: .git이 위치할 dir에서 실행
+
+	(Option) $ git config --list
+	: git의 email, username 등 확인 및 변경
+	
+	.3 git 저장소 등록
+	$ sudo git clone https://github.com/(...)
